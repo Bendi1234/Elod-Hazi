@@ -1,0 +1,99 @@
+/* Alapvető stílusok */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background-color: #6200ea;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #6200ea;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Szív elem stílusai */
+.heart {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  transform: rotate(-45deg);
+  margin: 50px auto;
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart::before {
+  top: -50px;
+  left: 0;
+}
+
+.heart::after {
+  left: 50px;
+  top: 0;
+}
+
+/* Szívdobogás animáció */
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1) rotate(-45deg);
+  }
+  25% {
+    transform: scale(1.2) rotate(-45deg);
+  }
+  50% {
+    transform: scale(1) rotate(-45deg);
+  }
+}
+
+.heart {
+  animation: heartbeat 1s infinite;
+}

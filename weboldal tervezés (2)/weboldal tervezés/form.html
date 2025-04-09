@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a><img src="images/metallogo.png" alt="Logó" width="150px"></a>
+        </div>
+        <div class="logo" style="float: right; visibility: hidden;">
+            <a><img src="images/metallogo.png" alt="Logó" width="150px"></a>
+        </div>
+        <h1>Űrlap</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="animation.html">Animáció</a></li>
+                <li><a href="form.html">Űrlap</a></li>
+                <li><a href="gallery.html">Galéria</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="" name="rendeles">
+            <fieldset>
+                <legend>Név</legend>
+                <p><label for="">Név:<input type="text" name="nev" id="nev"></label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Neme:</legend>
+                <p>
+                    <p><label for=""><input type="radio" name="nem" value="Férfi" checked>Férfi</label></p>
+                    <p><label for=""><input type="radio" name="nem" value="Nő">Nő</label></p>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Kedvenc alstílus</legend>
+                <p><label for=""><input type="checkbox" name="stilus1" value="stilus" checked>black metal</label></p>
+                <p><label for=""><input type="checkbox" name="stilus2" value="stilus">dsbm</label></p>
+                <p><label for=""><input type="checkbox" name="stilus3" value="stilus">viking</label></p>
+                <p><label for=""><input type="checkbox" name="stilus3" value="stilus">folk</label></p>
+                <p><label for=""><input type="checkbox" name="stilus3" value="stilus">heavy</label></p>
+                <p><label for=""><input type="checkbox" name="stilus3" value="stilus">classical</label></p>
+                <p><label for=""><input type="checkbox" name="stilus3" value="stilus">doom</label></p>
+                <p><label for=""><input type="checkbox" name="stilus3" value="stilus">funeral doom</label></p>
+            </fieldset>
+            <button type="reset">Alaphelyzet</button>
+            <button type="submit">Elküldés</button>
+        </form>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+
+</html>

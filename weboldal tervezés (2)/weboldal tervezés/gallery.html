@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galéria</title>
+  <link rel="stylesheet" href="css/gallery.css">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+    }
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.5s ease;
+    }
+    .gallery-item:hover img {
+        transform: scale(1.1);
+    }
+    .caption {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: background 0.5s ease;
+    }
+    .gallery-item:hover .caption {
+        background: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Galéria</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a href="animation.html">Animáció</a></li>
+        <li><a href="form.html">Űrlap</a></li>
+        <li><a href="gallery.html">Galéria</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="../weboldal tervezés/images/anthrax.jpg" alt="kep1">
+        <div class="caption">Anthrax</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../weboldal tervezés/images/Metallicalogo.jpg" alt="kep2">
+        <div class="caption">Metallica</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../weboldal tervezés/images/slayer-featured.webp" alt="kep3">
+        <div class="caption">Slayer</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../weboldal tervezés/images/Anthrax1.webp" alt="kep4">
+        <div class="caption">Anthrax</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../weboldal tervezés/images/kep1.jpg" alt="Image 5">
+        <div class="caption">Metallica</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../weboldal tervezés/images/8c81130db7b5f933412c4906c30327817f1e1b43.jpg" alt="Image 6">
+        <div class="caption">Slayer</div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/Anthrax2.jpg" alt="Image 7">
+        <div class="caption">Anthrax</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../weboldal tervezés/images/metallica_uj.jpg" alt="Image 8">
+        <div class="caption">Metallica</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../weboldal tervezés/images/images.jpg" alt="Image 9">
+        <div class="caption">Slayer</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../weboldal tervezés/images/Anthrax3.jpg" alt="Image 10">
+        <div class="caption">Anthrax</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../weboldal tervezés/images/46413824_5fe378caaec8adc8aafc41dc19248051_wm.jpg" alt="Image 11">
+        <div class="caption">Metallica</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../weboldal tervezés/images/slayer_gary_holt.jpg" alt="Image 12">
+        <div class="caption">Slayer</div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>2025 Stiener Máté Bendegúz</p>
+  </footer>
+</body>
+</html>
